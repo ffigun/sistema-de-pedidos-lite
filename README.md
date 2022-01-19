@@ -1,6 +1,8 @@
 # sistema-de-pedidos-lite (v2.5 Release 42)
 Este es un Sistema de tickets sumamente simple para realizar el seguimiento de trabajos. No se especifican requisitos mínimos por la ínfima cantidad de recursos que necesita este software para ejecutarse. Funciona con las versiones de 32 y 64 bits de Windows XP, Vista, 7, 8, 8.1, 10 y 11 así como sus variantes Windows Server.
 
+![Sistema de Pedidos Lite](/Res/SistemaDePedidos.png)
+
 ## Modo de uso
 Descargar el contenido de la carpeta /Bin/ y ejecutar el programa SistemaDePedidosLite.exe.
 
@@ -33,38 +35,43 @@ Puede enviar un pedido por correo electrónico haciendo clic en Archivo > Enviar
 ## Personalización y carga inicial de datos
 La personalización de algunos campos no tiene una interfaz gráfica y se debe modificar editando el archivo Datos.ini. Para ello, abrirlo en cualquier editor de texto plano y modificar los siguientes parámetros en formato Clave = Valor:
 
-* ### [SUCURSALES]
+### [SUCURSALES]
 Especificar bajo este campo un índice seguido del nombre de cada sucursal, por ejemplo:
 ```
+[SUCURSALES]
 0=Central
 1=San Martin
 2=Recoleta
 ```
 
-* ### [TECNICOS]
+### [TECNICOS]
 Especificar bajo este campo un índice seguido del nombre del técnico, por ejemplo:
 ```
+[TECNICOS]
 0=FGF
 1=SISTEMAS
 2=OTRO
 ```
-* ### [FGWIKI]
+### [FGWIKI]
 Especificar bajo este campo la clave Mostrar con un valor 1 o 0. Si es 1, se mostrará la opción "Abrir Wiki" en el menú del programa.
 Además, especificar la ruta del ejecutable FGWiki.exe en la clave RutaExe en caso de establecerse en 1. Por ejemplo,
 ```
+[FGWIKI]
 Mostrar=1
 RutaExe=C:\Programas\FGWiki\FGWiki.exe
 ```
 
-* ### [BACKUPS]
+### [BACKUPS]
 Especificar bajo este campo las claves Usar, CantidadDeCopias y Ruta.  Usar puede ser 1 o 0, y sirve para habilitar los backups automáticos. CantidadDeCopias especifica cuántos backups rotativos se harán por cada archivo respaldado, y Ruta es la carpeta donde se almacenarán los respaldos rotativos. Se puede utilizar el comodín &f, que se reemplazará por la ruta actual desde donde se ejecuta el Sistema de Pedidos Lite. Por ejemplo, para guardar 4 copias de cada archivo en la carpeta Backups del programa:
 ```
+[BACKUPS]
 Usar=1
 CantidadDeCopias=4
 Ruta=&f\Backups
 ```
 
-* ### El resto de los campos no es necesario modificarlos, pues se modifican dentro de la misma interfaz del Sistema de Pedidos Lite.
+### Campos [FLAGS], [FONT], [MAIN], etc.
+El resto de los campos no es necesario modificarlos, pues se modifican dentro de la misma interfaz del Sistema de Pedidos Lite, especialmente en el menú Opciones > Personalizar.
 
 ## Funciones avanzadas
 ### Resetear el Sistema de Pedidos Lite
