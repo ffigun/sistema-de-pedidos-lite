@@ -1,4 +1,4 @@
-# sistema-de-pedidos-lite (v2.5 Release 42)
+# Sistema de Pedidos Lite (v2.5 Release 42)
 Este es un Sistema de tickets sumamente simple para realizar el seguimiento de trabajos. No se especifican requisitos mínimos por la ínfima cantidad de recursos que necesita este software para ejecutarse. Funciona con las versiones de 32 y 64 bits de Windows XP, Vista, 7, 8, 8.1, 10 y 11 así como sus variantes Windows Server.
 
 ![Sistema de Pedidos Lite](/Res/SistemaDePedidos.png)
